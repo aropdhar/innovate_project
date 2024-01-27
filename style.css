@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+ /* ======================== Common Start Here ===================== */
+
+
+::root{
+
+    --font-family: "Chivo", sans-serif;
+}
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+
+.container{
+
+    width: 1410px;
+    margin: 0 auto;
+}
+
+.common_btn{
+
+    background: #43E7DF;
+    padding: 20px 48px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    border-radius: 6px;
+}
+/* ======================== Common End Here ===================== */
+
+/* ======================== Navbar Start Here ===================== */
+
+#navbar{
+
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menubar{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+
+    width: 111px;
+    height: 60px;
+}
+
+.logo img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.nav{
+
+    display: flex;
+    align-items: center;
+    column-gap: 78px;
+}
+
+.nav li a{
+
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.nav li a::after{
+
+    content: ' ';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background: #fac404;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all linear 0.3s;
+    bottom: -5px;
+}
+
+.nav li a:hover::after{
+
+    width: 100%;
+}
+
+.nav_btn{
+
+    display: flex;
+    align-items: center;
+    column-gap: 36px;
+    
+    
+}
+
+.nav_btn a{
+
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+/* ======================== Navbar End Here ===================== */
+
+/* ======================== Banner Start Here ===================== */
+
+#banner{
+
+    background: #3639A4;
+    padding: 194px 0 456px 0;
+    position: relative;
+}
+
+.banner_text{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.banner_text h1{
+
+    width: 796px;
+    margin: 0 auto;
+    font-size: 56px;
+    color: #FFFFFF;
+    font-family: var(--font-family);
+    font-weight: 400;
+    line-height: 64px;
+
+}
+
+.banner_text p{
+
+    width: 467px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #FFFFFF;
+    padding: 20px 0 32px 0;
+}
+
+.banner_input{
+
+    width: 480px;
+    margin: 0 auto;
+    background: #43E7DF;
+    text-align: left;
+    border-radius: 6px;
+    position: relative;
+}
+
+.banner_input input{
+
+    width: 480px;
+    padding: 20px 290px 20px 24px;
+    border-radius: 6px;
+    position: relative;
+    outline: none;
+}
+
+.banner_input .common_btn{
+    
+   padding: 12px 48px 12px 48px;
+   position: absolute;
+   right: 5px;
+   top: 8px;
+}
+
+.shape_1{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 320px;
+}
+
+.shape_1 img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.shape_2{
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 320px;
+}
+
+.shape_2 img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.shape_3{
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 700px;
+}
+
+.shape_3 img{
+
+    width: 100%;
+    object-fit: cover;
+}
+
+.shape_4{
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 700px;
+}
+
+.shape_4 img{
+
+    width: 100%;
+    object-fit: cover;
+}
+
+.shape_5{
+
+    position: absolute;
+    top: 672px;
+    right: 380px;
+    left: 350px;
+    
+}
+
+.shape_5 img{
+
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* ======================== Banner End Here ===================== */
+
+
+/* ======================== platfrom Start Here ===================== */
+
+#platfrom{
+
+    padding: 260px 0 165px 0;
+}
+
+.platfrom_header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.platfrom_header h1{
+
+    width: 504px;
+    font-family: var(--font-family);
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 58px;
+
+}
+
+.platfrom_header p{
+
+    width: 530px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+
+}
+
+.platfrom_main{
+
+    display: flex;
+    align-items: center;
+    column-gap: 200px;
+    text-align: center;
+    margin-top: 116px;
+    position: relative;
+}
+
+.platfrom_card h1{
+
+    width: 300px;
+    margin: 0 auto;
+    font-family: var(--font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0px;
+    text-align: center;
+    padding: 26px 0 12px 0;
+
+}
+
+.platfrom_card p{
+
+    width: 300px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #645E76;
+
+}
+
+.left_shaper_1{
+
+    position: absolute;
+    left: 288px;
+    top: 100px;
+    width: 200px;
+}
+
+.left_shaper_1 img{
+
+    width: 100%;
+    object-fit: cover;
+}
+
+.left_shaper_2{
+
+    position: absolute;
+    right: 420px;
+    top: 120px;
+    width: 200px;
+}
+
+.left_shaper_2 img{
+
+    width: 100%;
+    object-fit: cover;
+}
+/* ======================== platfrom End Here ===================== */
+
+
+/* ======================== business Start Here ===================== */
+
+#business{
+
+   padding: 120px 0;
+}
+
+.business_main{
+
+    display: flex;
+    align-items: center;
+    column-gap: 250px;
+}
+
+.business_image{
+
+    width: 753.09px;
+    height:  450px;
+    overflow: hidden;
+}
+
+.business_image img{
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.business_card_main{
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 104px;
+    margin-top: 64px;
+}
+
+.business_content h1{
+
+    width: 553px;
+    color:  #2C2643;
+    font-family: var(--font-family);
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 58px;
+
+}
+
+.business_card_main .business_card h4{
+
+    margin: 14px 0 6px 0;
+    width: 212px;
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+
+
+}
+
+.business_card_main .business_card p{
+
+    width: 220px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #645E76;
+}
+
+.business_card_main .business_card .common_btn{
+
+    background-color: #3639A4;
+}
+
+/* ======================== business End Here ===================== */
+
+
+
+/* ======================== Integrations Start Here ===================== */
+
+#integrations{
+
+    padding: 120px 0 120px 0;
+    background: #F4FAFA;
+    position: relative;
+}
+
+.integrations_main{
+
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+}
+
+.integrations_content span{
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #FF7364;
+}
+
+.integrations_content h1{
+
+    width: 587px;
+    font-family: var(--font-family);
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 58px;
+    margin: 6px 0 20px 0;
+}
+
+
+.integrations_content p{
+
+    width: 533px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 40px;
+
+}
+
+.integrations_btn .common_btn{
+
+    background: #3639A4;
+}
+
+.integrations_shape img{
+
+    position: absolute;
+    top: 665px;
+    left: 50px;
+}
+/* ======================== Integrations End Here ===================== */
+
+
+/* ======================== Common Start Here ===================== */
+/* ======================== Common End Here ===================== */
+
+
+
+/* ======================== Common Start Here ===================== */
+/* ======================== Common End Here ===================== */
+
+
+/* ======================== Common Start Here ===================== */
+/* ======================== Common End Here ===================== */
